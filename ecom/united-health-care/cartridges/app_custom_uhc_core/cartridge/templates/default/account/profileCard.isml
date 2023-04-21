@@ -1,0 +1,35 @@
+<div class="card">
+    <div class="card-header clearfix">
+        <h2 class="pull-left profile-header">${Resource.msg('label.profile','account',null)}</h2>
+        <a href="${dw.system.Site.current.preferences.custom.editProfileLink}" class="pull-right" aria-label="${Resource.msg('label.profile.edit','account',null)}">${Resource.msg('link.edit','account',null)}</a>
+    </div>
+    <div class="card-body">
+        <dl>
+            <dt>${Resource.msg('label.profile.firstname','account',null)}</dt>
+            <dd>${pdict.account.profile.firstName}</dd>
+        </dl>
+        <dl>
+            <dt>${Resource.msg('label.profile.lastname','account',null)}</dt>
+            <dd>${pdict.account.profile.lastName}</dd>
+        </dl>
+        <dl>
+            <dt>${Resource.msg('label.profile.email','account',null)}</dt>
+            <dd>${pdict.account.profile.email}</dd>
+        </dl>
+        <dl>
+            <dt id="profile-phone">${Resource.msg('label.profile.phone','account',null)}</dt>
+            <dd>
+                <input class="input-phone input-unset-all" value="${pdict.account.profile.phone}" readonly aria-labelledby="profile-phone" />
+            </dd>
+        </dl>
+        <isif condition="${pdict.communicationPreference !== ''}">
+            <dl>
+                <dt>${Resource.msg('label.profile.communications-preference','account',null)}</dt>
+                <dd>${pdict.communicationPreference}</dd>
+            </dl>
+        </isif>
+        <div class="change-password-btn">
+            <a href="${dw.system.Site.current.preferences.custom.changePasswordLink}" class="btn btn-outline-primary">${Resource.msg('label.btn.change-password','account',null)}</a>
+        </div>
+    </div>
+</div>
