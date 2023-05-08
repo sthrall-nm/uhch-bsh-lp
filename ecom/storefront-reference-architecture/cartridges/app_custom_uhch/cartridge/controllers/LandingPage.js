@@ -2,13 +2,16 @@ var PageMgr = require('dw/experience/PageMgr');
 var URLUtils = require('dw/web/URLUtils');
 
 exports.Show = function () {
-  var page = PageMgr.getPage(request.httpParameterMap.cid.stringValue);
+  var getId = (request !== undefined) ? request.httpParameterMap.cid.stringValue : null; 
+  var page = PageMgr.getPage(getId);
   var content = PageMgr.renderPage(page.ID, '');
 
-  if (page != null && page.isVisible()) {
-    response.writer.print(content);
-  } else {
-    response.redirect(URLUtils.httpsHome().toString());
+  if (response !== undefined) {
+    if (page != null && page.isVisible()) {
+      response.writer.print(content);
+    } else {
+      response.redirect(URLUtils.httpsHome().toString());
+    }
   }
 };
 
