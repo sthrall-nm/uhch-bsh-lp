@@ -1,4 +1,4 @@
-@import '~uhchearing/common/fonts';
+@import '../fonts';
 
 /**
  * Landing Page Variables
@@ -85,8 +85,8 @@ $width-tiny: 600px;
         background-size: cover;
         background-position: 50%;
         height: auto;
-        max-height: 25vw;
-        min-height: 520px;
+        max-height: 28vw;
+        min-height: 620px;
         overflow: hidden;
         padding: 0;
         position: relative;
@@ -98,8 +98,8 @@ $width-tiny: 600px;
 
             img {
                 left: 0;
-                max-width: 100%;
-                min-height: 100%;
+                max-height: 28vw;
+                min-height: 620px;
                 min-width: 100%;
                 object-fit: cover;
                 position: absolute;
@@ -117,6 +117,10 @@ $width-tiny: 600px;
                 max-width: 491px;
                 padding: 40px;
                 position: absolute;
+
+                .logo img {
+                    max-width: 100%;
+                }
 
                 h1 {
                     color: $color-blue-dark;
@@ -203,6 +207,9 @@ $width-tiny: 600px;
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
+            
+            margin: 0 auto;
+            max-width: 1270px;
         }
 
         @media only screen and (max-width: $width-small) {
@@ -275,7 +282,6 @@ $width-tiny: 600px;
             @media only screen and (max-width: $width-small) {
                 display: block;
 
-                .left,
                 .right {
                     flex-basis: 100%;
                     max-width: 100%;
@@ -284,8 +290,12 @@ $width-tiny: 600px;
                 }
 
                 .left {
+                    flex-basis: calc(100% - 70px);
                     margin-top: 0;
+                    max-width: calc(100% - 70px);
+                    min-width: calc(100% - 70px);
                     padding: 35px 35px 44px;
+                    width: calc(100% - 70px);
                 }
             }
         }
@@ -371,7 +381,7 @@ $width-tiny: 600px;
         }
 
         @media only screen and (max-width: $width-small) and (min-width: $width-tiny) {
-            margin-top: 203px;
+            margin-top: 243px;
         }
     }
 
@@ -412,13 +422,13 @@ $width-tiny: 600px;
             }
 
             @media only screen and (max-width: $width-small) {
-                .left,
-                .right {
+                .left {
                     width: 100%;
                 }
 
                 .right {
                     padding: 20px 35px 50px;
+                    width: calc(100% - 70px);
                 }
             }
         }
@@ -440,6 +450,7 @@ $width-tiny: 600px;
 
                 .content {
                     p {
+                        margin-bottom: 32px;
                         margin-right: auto;
                         max-width: 447px;
                     }
@@ -466,13 +477,13 @@ $width-tiny: 600px;
             }
 
             @media only screen and (max-width: $width-small) {
-                .left,
                 .right {
                     width: 100%;
                 }
 
                 .left {
                     padding: 50px 35px;
+                    width: calc(100% - 70px);
                 }
 
                 .right {
@@ -489,6 +500,11 @@ $width-tiny: 600px;
     footer {
         background: $color-light-alt;
         padding: 78px 83px 50px;
+
+        .inner {
+            margin: 0 auto;
+            max-width: 1270px;
+        }
 
         @media only screen and (max-width: $width-small) {
             padding: 46px 35px;
