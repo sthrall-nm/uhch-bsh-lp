@@ -9,8 +9,8 @@
     <div class="right">
         <div class="content">
             <h2>${pdict.rightHeadline}</h2>
-            <h3>This May, find a hearing provider near you and schedule a free hearing exam and consultation through AARP<sup>&reg;</sup> Hearing Solutions<sup>&trade;</sup> provided by UnitedHealthcare Hearing.</h3>
-            <iscomment> <h3><isprint value="${pdict.rightSubheadline}" encoding="off" /></h3> </iscomment>
+            <isinclude template="/components/modules" sf-toolkit="off" />
+            <iscontentasset aid="bsh-s2-rightSubheadline"/>
             <isprint value="${pdict.rightParagraph}" encoding="off" />
 
             <div class="cta">

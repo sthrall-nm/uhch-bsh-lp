@@ -33,13 +33,6 @@
                     "required": true
                 },
                 {
-                    "id": "rightSubheadline",
-                    "name": "Right Subheadline Text",
-                    "description": "The headline shown in the left-aligned box.",
-                    "type": "markup",
-                    "required": true
-                },
-                {
                     "id": "rightParagraph",
                     "name": "Right Paragraph Text",
                     "description": "The text shown in the button within the white box.",

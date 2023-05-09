@@ -2,8 +2,8 @@
     <div class="left">
         <div class="content">
             <h2>${pdict.leftHeadline}</h2>
-            <p>Hearing aids are more discreet, more comfortable and more advanced than ever. With a wide variety of styles that feature the latest technology such as recharging capabilities, connection to Bluetooth<sup>&reg;</sup> devices, tap control, remote adjustments and more, AARP Hearing Solutions can help you hear more for less.</p>
-            <iscomment> <isprint value="${pdict.leftParagraph}" encoding="off" /> </iscomment>
+            <isinclude template="/components/modules" sf-toolkit="off" />
+            <iscontentasset aid="bsh-s3-leftParagraph"/>
 
             <div class="cta">
                 <a href="${pdict.buttonLink}" class="primary button">

@@ -14,13 +14,6 @@
                     "required": true
                 },
                 {
-                    "id": "leftParagraph",
-                    "name": "Left Paragraph Text",
-                    "description": "The text shown in the button within the white box.",
-                    "type": "markup",
-                    "required": true
-                },
-                {
                     "id": "buttonText",
                     "name": "Button Text",
                     "description": "The text shown in the button within the white box.",
