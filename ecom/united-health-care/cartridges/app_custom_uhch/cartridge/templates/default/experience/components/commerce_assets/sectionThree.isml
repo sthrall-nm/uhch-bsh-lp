@@ -1,0 +1,22 @@
+<div class="inner">
+    <div class="left">
+        <div class="content">
+            <h2>${pdict.leftHeadline}</h2>
+            <p>Hearing aids are more discreet, more comfortable and more advanced than ever. With a wide variety of styles that feature the latest technology such as recharging capabilities, connection to Bluetooth<sup>&reg;</sup> devices, tap control, remote adjustments and more, AARP Hearing Solutions can help you hear more for less.</p>
+            <iscomment> <isprint value="${pdict.leftParagraph}" encoding="off" /> </iscomment>
+
+            <div class="cta">
+                <a href="${pdict.buttonLink}" class="primary button">
+                    ${pdict.buttonText}
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="content">
+            <div class="image">
+                <img src="${pdict.rightImage.src.desktop}" alt="${pdict.rightAlt ? pdict.rightAlt : imageName}" />
+            </div>
+        </div>
+    </div>
+</div>

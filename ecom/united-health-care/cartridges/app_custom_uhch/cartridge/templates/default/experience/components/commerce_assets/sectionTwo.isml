@@ -1,0 +1,23 @@
+<div class="inner">
+    <div class="left">
+        <div class="content">
+            <div class="image">
+                <img src="${pdict.leftImage.src.desktop}" alt="${pdict.leftAlt ? pdict.leftAlt : imageName}" />
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="content">
+            <h2>${pdict.rightHeadline}</h2>
+            <h3>This May, find a hearing provider near you and schedule a free hearing exam and consultation through AARP<sup>&reg;</sup> Hearing Solutions<sup>&trade;</sup> provided by UnitedHealthcare Hearing.</h3>
+            <iscomment> <h3><isprint value="${pdict.rightSubheadline}" encoding="off" /></h3> </iscomment>
+            <isprint value="${pdict.rightParagraph}" encoding="off" />
+
+            <div class="cta">
+                <a href="${pdict.buttonLink}" class="primary button">
+                    ${pdict.buttonText}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
