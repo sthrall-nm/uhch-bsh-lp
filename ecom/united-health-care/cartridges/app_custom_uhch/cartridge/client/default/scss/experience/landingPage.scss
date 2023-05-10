@@ -114,6 +114,7 @@ $width-tiny: 600px;
 
         .inner {
             padding: 83px;
+            padding-left: 0px;
 
             .content {
                 background-color: $color-light;
@@ -393,18 +394,12 @@ $width-tiny: 600px;
                 padding: 61px 35px 50px;
             }
         }
-
-        @media only screen and (max-width: $width-small) and (min-width: $width-tiny) {
-            // padding-top: 0;
-
-            // .left {
-            //     padding-top: 0;
-            // }
-        }
     }
 
     /** Section Two */
     .section.section-two {
+        padding: 50px 83px 50px 0px;
+
         .inner {
             .left {
                 flex-basis: 35%;
@@ -464,7 +459,7 @@ $width-tiny: 600px;
             .left {
                 flex-basis: 54%;
                 width: 54%;
-                padding: 50px 83px;
+                padding: 50px 83px 50px 0px;
 
                 .content {
                     p {
