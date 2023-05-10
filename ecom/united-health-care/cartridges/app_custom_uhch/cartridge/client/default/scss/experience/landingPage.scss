@@ -65,6 +65,10 @@ $width-tiny: 600px;
         font-weight: 500;
         font-size: 18px;
         line-height: 24px;
+
+        sup {
+            line-height: 110%;
+        }
     }
 
     small {
@@ -85,8 +89,8 @@ $width-tiny: 600px;
         background-size: cover;
         background-position: 50%;
         height: auto;
-        max-height: 28vw;
-        min-height: 620px;
+        max-height: 25vw;
+        min-height: 520px;
         overflow: hidden;
         padding: 0;
         position: relative;
@@ -119,7 +123,7 @@ $width-tiny: 600px;
                 position: absolute;
 
                 .logo img {
-                    max-width: 100%;
+                    max-width: 393px;
                 }
 
                 h1 {
@@ -131,7 +135,6 @@ $width-tiny: 600px;
                     line-height: 44px;
                     margin-bottom: 35px;
                     margin-top: 57px;
-                    max-width: 221px;
                 }
             }
         }
@@ -147,6 +150,8 @@ $width-tiny: 600px;
             .image {
                 img {
                     left: auto;
+                    max-height: none;
+                    min-height: auto;
                     right: -25%;
                 }
             }
@@ -158,6 +163,8 @@ $width-tiny: 600px;
             .image {
                 img {
                     left: auto;
+                    max-height: none;
+                    min-height: auto;
                 }
             }
 
@@ -170,11 +177,18 @@ $width-tiny: 600px;
                     margin: 0;
                     max-width: 100%;
                     position: relative;
+
+                    .logo {
+                        max-width: 234px;
+                    }
                 }
             }
         }
 
         @media only screen and (max-width: $width-tiny) {
+            max-height: none;
+            min-height: auto;
+
             .image {
                 img {
                     height: 194px;
@@ -182,6 +196,7 @@ $width-tiny: 600px;
             }
 
             .inner {
+                padding-bottom: 0;
                 padding-top: 36%;
 
                 .content {
@@ -207,7 +222,6 @@ $width-tiny: 600px;
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
-            
             margin: 0 auto;
             max-width: 1270px;
         }
@@ -381,7 +395,11 @@ $width-tiny: 600px;
         }
 
         @media only screen and (max-width: $width-small) and (min-width: $width-tiny) {
-            margin-top: 243px;
+            // padding-top: 0;
+
+            // .left {
+            //     padding-top: 0;
+            // }
         }
     }
 
