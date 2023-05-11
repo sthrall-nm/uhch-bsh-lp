@@ -16,6 +16,7 @@ $width-large: 1280px;
 $width-medium: 1024px;
 $width-small: 900px;
 $width-tiny: 600px;
+$width-mini: 480px;
 
 .landing-page {
     width: 100%;
@@ -32,6 +33,11 @@ $width-tiny: 600px;
             line-height: 19px;
             padding: 12px 56px;
             text-decoration: none;
+
+            @media only screen and (max-width: $width-mini) {
+                display: block;
+                width: 100%;
+            }
         }
     }
 
@@ -392,7 +398,7 @@ $width-tiny: 600px;
             }
         }
 
-        @media only screen and (min-width: $width-tiny) {
+        @media only screen and (min-width: $width-tiny) and (max-width: $width-small) {
             margin-top: 234px;
         }
     }
