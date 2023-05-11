@@ -297,6 +297,7 @@ $width-tiny: 600px;
             @media only screen and (max-width: $width-small) {
                 display: block;
 
+                .left,
                 .right {
                     flex-basis: 100%;
                     max-width: 100%;
@@ -305,12 +306,8 @@ $width-tiny: 600px;
                 }
 
                 .left {
-                    flex-basis: calc(100% - 70px);
                     margin-top: 0;
-                    max-width: calc(100% - 70px);
-                    min-width: calc(100% - 70px);
                     padding: 35px 35px 44px;
-                    width: calc(100% - 70px);
                 }
             }
         }
@@ -393,6 +390,10 @@ $width-tiny: 600px;
             @media only screen and (max-width: $width-small) {
                 padding: 61px 35px 50px;
             }
+        }
+
+        @media only screen and (min-width: $width-tiny) {
+            margin-top: 234px;
         }
     }
 
@@ -498,7 +499,7 @@ $width-tiny: 600px;
 
                 .left {
                     padding: 50px 35px;
-                    width: calc(100% - 70px);
+                    width: 100%;
                 }
 
                 .right {
