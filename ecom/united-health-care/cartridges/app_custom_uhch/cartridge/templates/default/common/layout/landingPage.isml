@@ -14,6 +14,21 @@
         </isif>
         <isactivedatahead/>
         <isinclude template="/components/schema" />
+        <!-- Datalayer Object -->
+        <script>
+            var adobeDataLayer = [];
+            var isAdobeDatalayer = 'true';
+            var buildContentViewURL = 'https://www.aarphearingsolutions.com/on/demandware.store/Sites-AARPHearing-Site/default/Build-BuildContentView';
+            var datalayerContext = 'GlobalData';
+            var datalayerPageGroup = 'content';
+            var datalayerPageName = 'Hear BSHM';
+            var isErrorPage = 'false';
+            var isSections = 'true';
+            var datalayerSections = {};
+            if (isSections === 'true') {
+                datalayerSections = {"section2":"","section3":"","section4":""};
+            }
+        </script>
     </head>
     <body>
         ${dw.system.HookMgr.callHook('app.template.beforeHeader', 'beforeHeader', pdict) || ''}
