@@ -6,7 +6,7 @@
 <html lang="${require('dw/util/Locale').getLocale(request.getLocale()).getLanguage()}">
     <head>
         <!-- DataLayer Object -->
-        <isinclude template="/common/datalayer" />
+        <isinclude template="/common/lp-datalayer" />
         <!--[if gt IE 9]><!-->
             <isinclude sf-toolkit="off" template="/common/scripts" />
         <!--<![endif]-->
@@ -16,25 +16,6 @@
         </isif>
         <isactivedatahead/>
         <isinclude template="/components/schema" />
-        <iscomment>
-        <script>
-            // var contentViewURL = ${URLUtils.staticURL('/Build-BuildContentView').toString()};
-
-            var adobeDataLayer = [];
-            var isAdobeDatalayer = 'true';
-            // var buildContentViewURL = contentViewURL;
-            var buildContentViewURL = 'https://bgxl-005.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Build-BuildContentView';
-            var datalayerContext = 'GlobalData';
-            var datalayerPageGroup = 'content';
-            var datalayerPageName = 'Hear BSHM';
-            var isErrorPage = 'false';
-            var isSections = 'true';
-            var datalayerSections = {};
-            if (isSections === 'true') {
-                datalayerSections = {"section2":"","section3":"","section4":""};
-            }
-        </script>
-        </iscomment>
     </head>
     <body>
         ${dw.system.HookMgr.callHook('app.template.beforeHeader', 'beforeHeader', pdict) || ''}

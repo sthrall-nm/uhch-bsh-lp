@@ -1,5 +1,4 @@
-<!-- Datalayer Object -->
-<script type="text/javascript">
+<script>
     var adobeDataLayer = [];
     var isAdobeDatalayer = 'true';
     var buildContentViewURL = '${URLUtils.https('Build-BuildContentView').toString()}';
